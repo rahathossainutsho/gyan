@@ -20,6 +20,12 @@ $(window).scroll(function(){
 
 //============== fixed manu js start ===============//
 
+//================== wow js start ==================//
+
+new WOW().init();
+
+//==================== wow js end ==================//
+
 //============= banner slider js start =============//
 
 $('.banner-slider').slick({
