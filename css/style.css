@@ -208,7 +208,7 @@ header .get-started a:hover:after{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999999;
     -webkit-box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.15);
@@ -2005,7 +2005,7 @@ header .get-started a:hover:after{
     position: fixed;
     right: 30px;
     bottom: 32px;
-    z-index: 9999;
+    z-index: 9999999;
 }
 
 .back-to-top i{
