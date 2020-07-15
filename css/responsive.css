@@ -1,0 +1,1404 @@
+/*========================================================
+   Extra small devices (portrait phones, less than 576px)
+========================================================*/
+
+@media (min-width:320px) and (max-width:575.98px){
+    
+    .title p{
+        padding: 0;
+    }
+    
+/*========== header-top-part css start ==============*/
+    
+    #header-top-part .left{
+        display: none;
+    }
+    
+/*============ header-top-part css end ==============*/
+    
+/*========= header-part (navbar) css start ==========*/
+    
+    header .navbar .container{
+        padding: 0 15px;
+    }
+    
+    header .navbar-brand{
+        padding-top: 8px;
+        padding-bottom:10px;
+    }
+    
+    header .navbar ul{
+        padding-bottom: 10px;
+    }
+    
+    header .navbar ul li{
+        text-align: center;
+    }
+    
+    header .navbar-nav li .nav-link{
+        padding-right: 0!important;
+        padding: 8px 0;
+    }
+    
+    header .navbar .get-started{
+        display: none;
+    }
+
+/*========== header-part (navbar) css end ===========*/
+    
+/*============== banner part css start ==============*/
+    
+    #banner-part .banner .overlay{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom:118px;
+    }
+    
+    #banner-part .banner h2{
+        font-size: 26px;
+    }
+    
+    #banner-part .banner h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #banner-part .banner p{
+        padding-right: 0;
+        font-size: 12px;
+    }
+    
+    #banner-part .button a{
+        margin-right: 0;
+        padding: 13px 22px;
+        margin: 0 5px;
+    }
+    
+    #banner-part .prev{
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        font-size: 23px;
+        line-height: 36px;
+        top: 57%;
+    }
+    
+    #banner-part .next{
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        font-size: 23px;
+        line-height: 36px;
+        top: 57%;
+    }
+    
+    #banner-part .support .container{
+        padding: 0 30px;
+    }
+    
+    #banner-part .support .online{
+        padding: 20px 0;
+    }
+    
+/*=============== banner part css end ===============*/
+    
+/*============== about part css start ===============*/
+    
+    #about-part .item .about-slider:before{
+        width: 190px;
+    }
+    
+    #about-part .item .about-slider:after{
+        width: 190px;
+    }
+    
+    #about-part .item .la:before{
+        width: 8px;
+        left: 194px;
+    }
+    
+    #about-part .item .la:after{
+        width: 8px;
+        right: 194px;
+    }
+    
+    #about-part .text{
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    #about-part .text p{
+        text-align: center;
+    }
+    
+    #about-part .text a{
+        margin: 0 2px;
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+/*=============== about part css end ================*/
+
+/*============ counter-up part css start ============*/
+    
+    #counter-up-part{
+        padding: 20px 0;
+    }
+    #counter-up-part .count{
+        padding: 20px 0;
+    }
+    
+    #counter-up-part h1{
+        font-size: 26px;
+    }
+    
+    #counter-up-part h2{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+/*============ counter-up part css end ==============*/
+    
+/*============= courses part css start ==============*/
+    
+    #courses-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #courses-part .item .people{
+        flex-direction: column;
+    }
+    
+    #courses-part .item .people .left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #courses-part .item .people .img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #courses-part .item .people .left .info{
+        text-align: center;
+    }
+    
+    #courses-part .item .people .right{
+        text-align: center;
+    }
+    
+    #courses-part .item .people .right p{
+        margin-top: 0;
+    }
+    
+    #courses-part .item .deg{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #courses-part .item .details{
+        text-align: center;
+    }
+    
+    #courses-part .courses-part-slider .item a{
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+    #courses-part .prev{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:103%;
+        left: 30%;
+    }
+    
+    #courses-part .next{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:103%;
+        right: 30%;
+    }
+    
+/*============== courses part css end ===============*/
+    
+/*============== events part css start ==============*/
+    
+    #events-part .title{
+        padding-top: 20px;
+    }
+    
+    #events-part .calendar{
+        padding-bottom: 30px;
+    }
+    
+    #events-part .event .event-text h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    #events-part .event .event-text .loca{
+        font-size: 13px;
+    }
+    
+/*=============== events part css end ===============*/
+    
+/*============ testimonial part css start ===========*/
+    
+    #testimonial-part .testimonial-slider .slide{
+        flex-direction: column;
+    }
+    
+    #testimonial-part .img{
+        width: 100%;
+    }
+    
+    #testimonial-part .details{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    #testimonial-part .details p{
+        margin-top: 25px;
+    }
+    
+/*============= testimonial part css end ============*/
+    
+/*============== teacher part css start =============*/
+    
+    #teacher-part{
+        padding-bottom: 25px;
+    }
+    #teacher-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #teacher-part .prev{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height:36px;
+        top:108%;
+        left: 30%;
+    }
+    
+    #teacher-part .next{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:108%;
+        right: 30%;
+    }
+    
+/*=============== teacher part css end ==============*/
+    
+/*================ blog part css start ==============*/
+    
+    #blog-image-part .top-blog-part .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.7);
+    }
+    
+    .top-blog-part .icons{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+    
+    .top-blog-part .icons li{
+        margin: 0 4px;
+    }
+    
+    .top-blog-part h2{
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .top-blog-part h2 a{
+        text-align: center;
+        font-size: 16px;
+        padding: 0 30px;
+    }
+    
+    .top-blog-part .blog:hover .text h2{
+        margin-top: 0;
+    }
+    
+    .top-blog-part .text .blog-footer{
+        position: absolute;
+        bottom: 5px;
+    }
+    
+    .top-blog-part .text .blog-footer p{
+        font-size: 11px;
+        text-align: center;
+        padding-left: 0;
+        display: block;
+        padding-top: 10px!important;
+    }
+    
+/*================= blog part css end ===============*/
+    
+/*=============== footer part css start =============*/
+    
+    #footer-part .left{
+        text-align: center;
+    }
+    
+    #footer-part .left p{
+        text-align: center;
+    }
+    
+    #footer-part .left .icons{
+        justify-content: center;
+    }
+    
+    #footer-part .left .icons li a i{
+        margin: 0 5px;
+    }
+    
+    #footer-part h5{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    #footer-part .middle ul li{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    
+    #footer-part .middle ul li a:hover{
+        padding-left: 0;
+    }
+    
+    #footer-part .middle ul .last{
+        padding-bottom: 50px;
+    }
+    
+    #footer-part .right .contact-icon{
+        text-align: center;
+    }
+    
+    #footer-part .right a{
+        margin: 0 5px;
+        margin-bottom: 15px;
+    }
+    
+    #footer-part .right ul li p{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    #footer-end-img-part .img a{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+/*================ footer part css end ==============*/
+    
+/*=========== back to top button css =========*/
+    
+    .back-to-top{
+        right: 20px;
+        bottom: 29px;
+    }
+    
+    .back-to-top i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+}
+
+/*========================================================
+          Extra small device responsive css end
+========================================================*/
+
+
+
+/*========================================================
+      Small devices (landscape phones, 576px and up)
+========================================================*/
+
+@media (min-width:576px) and (max-width:767.98px){
+    
+    .title p{
+        padding: 0;
+    }
+    
+/*========== header-top-part css start ==============*/
+    
+    #header-top-part .left .mail{
+        display: none;
+    }
+    
+/*============ header-top-part css end ==============*/
+    
+/*========= header-part (navbar) css start ==========*/
+    
+    header .navbar .container{
+        padding: 0 15px;
+    }
+    
+    header .navbar-brand{
+        padding-top: 8px;
+        padding-bottom:10px;
+    }
+    
+    header .navbar ul{
+        padding-bottom: 10px;
+    }
+    
+    header .navbar ul li{
+        text-align: center;
+    }
+    
+    header .navbar-nav li .nav-link{
+        padding-right: 0!important;
+        padding: 8px 0;
+    }
+    
+    header .navbar .get-started{
+        display: none;
+    }
+
+/*========== header-part (navbar) css end ===========*/
+    
+/*============== banner part css start ==============*/
+    
+    #banner-part .banner .overlay{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom:130px;
+    }
+    
+    #banner-part .banner h2{
+        font-size: 26px;
+    }
+    
+    #banner-part .banner h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #banner-part .banner p{
+        padding-right: 0;
+        font-size: 12px;
+    }
+    
+    #banner-part .button a{
+        margin-right: 0;
+        padding: 13px 22px;
+        margin: 0 15px;
+    }
+    
+    #banner-part .prev{
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        font-size: 23px;
+        line-height: 36px;
+        top: 57%;
+    }
+    
+    #banner-part .next{
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        font-size: 23px;
+        line-height: 36px;
+        top: 57%;
+    }
+    
+    #banner-part .support .online{
+        padding: 20px 0;
+    }
+    
+/*=============== banner part css end ===============*/
+    
+/*============== about part css start ===============*/
+    
+    #about-part .item .about-slider:before{
+        width: 300px;
+    }
+    
+    #about-part .item .about-slider:after{
+        width:300px;
+    }
+    
+    #about-part .item .la:before{
+        left: 305px;
+    }
+    
+    #about-part .item .la:after{
+        right: 305px;
+    }
+    
+    #about-part .text{
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    #about-part .text p{
+        text-align: center;
+    }
+    
+    #about-part .text a{
+        margin: 0 10px;
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+/*=============== about part css end ================*/
+
+/*============ counter-up part css start ============*/
+    
+    #counter-up-part{
+        padding: 20px 0;
+    }
+    #counter-up-part .count{
+        padding: 20px 0;
+    }
+    
+    #counter-up-part h1{
+        font-size: 26px;
+    }
+    
+    #counter-up-part h2{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    
+/*============ counter-up part css end ==============*/
+    
+/*============= courses part css start ==============*/
+    
+    #courses-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #courses-part .item .people{
+        flex-direction: column;
+    }
+    
+    #courses-part .item .people .left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #courses-part .item .people .img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #courses-part .item .people .left .info{
+        text-align: center;
+    }
+    
+    #courses-part .item .people .right{
+        text-align: center;
+    }
+    
+    #courses-part .item .people .right p{
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+    
+    #courses-part .item .deg{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #courses-part .item .details{
+        text-align: center;
+    }
+    
+    #courses-part .courses-part-slider .item a{
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+    #courses-part .prev{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:103%;
+        left: 30%;
+    }
+    
+    #courses-part .next{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:103%;
+        right: 30%;
+    }
+    
+/*============== courses part css end ===============*/
+    
+/*============== events part css start ==============*/
+    
+    #events-part .title{
+        padding-top: 20px;
+    }
+    
+    #events-part .calendar{
+        padding-bottom: 30px;
+    }
+    
+    #events-part .event .event-text h3{
+        font-size: 20px;
+    }
+    
+    #events-part .event .event-text .loca{
+        font-size: 13px;
+    }
+    
+/*=============== events part css end ===============*/
+    
+/*============ testimonial part css start ===========*/
+    
+    #testimonial-part .testimonial-slider .slide{
+        flex-direction: column;
+    }
+    
+    #testimonial-part .img{
+        width: 100%;
+    }
+    
+    #testimonial-part .details{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    #testimonial-part .details p{
+        margin-top: 25px;
+    }
+    
+/*============= testimonial part css end ============*/
+    
+/*============== teacher part css start =============*/
+    
+    #teacher-part{
+        padding-bottom: 25px;
+    }
+    #teacher-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #teacher-part .prev{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height:36px;
+        top:108%;
+        left: 30%;
+    }
+    
+    #teacher-part .next{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:108%;
+        right: 30%;
+    }
+    
+/*=============== teacher part css end ==============*/
+    
+/*================ blog part css start ==============*/
+    
+    .top-blog-part .blog .text h2{
+        margin-top:16%;
+    }
+    
+    .top-blog-part .blog:hover .text h2{
+        margin-top:10%;
+    }
+    
+    .bottom-blog-part .blog .icons{
+        margin-top: 10px;
+    }
+    
+    .bottom-blog-part .blog:hover .icons{
+        margin-right: 10px;
+    }
+    
+/*================= blog part css end ===============*/
+    
+/*=============== footer part css start =============*/
+    
+    #footer-part .left{
+        text-align: center;
+    }
+    
+    #footer-part .left p{
+        text-align: center;
+    }
+    
+    #footer-part .left .icons{
+        justify-content: center;
+    }
+    
+    #footer-part .left .icons li a i{
+        margin: 0 5px;
+    }
+    
+    #footer-part h5{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    #footer-part .middle ul li{
+        padding-bottom: 25px;
+        padding-left: 76px;
+    }
+    
+    #footer-part .middle ul li a:hover{
+        padding-left: 10px;
+    }
+    
+    #footer-part .right .contact-icon{
+        text-align: center;
+    }
+    
+    #footer-part .right a{
+        margin: 0 5px;
+        margin-bottom: 15px;
+    }
+    
+    #footer-part .right ul li p{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+/*================ footer part css end ==============*/
+    
+/*============ footer image part css start ==========*/
+    
+    #footer-end-img-part .img a{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    #footer-end-img-part .slick-current .overlay{
+       transform: scale(0); 
+    }
+
+   #footer-end-img-part .slick-current a{
+        transform:translate(-50%,-50%)rotate(0deg);
+        opacity: 0;
+    }
+
+   #footer-end-img-part .slick-current:hover a{
+        transform:translate(-50%,-50%)rotate(360deg);
+    }
+    
+/*============= footer image part css end ===========*/
+    
+/*=========== back to top button css =========*/
+    
+    .back-to-top{
+        right: 20px;
+        bottom: 39px;
+    }
+    
+    .back-to-top i{
+        width: 33px;
+        height: 33px;
+        line-height: 31px;
+    }
+    
+}
+
+/*========================================================
+             Small devices responsive css end
+========================================================*/
+
+
+
+/*========================================================
+      Medium devices (landscape tablets, 768px and up)
+========================================================*/
+
+@media (min-width:768px) and (max-width:991.98px){
+    
+    .title p{
+        padding: 0;
+    }
+    
+/*========= header-part (navbar) css start ==========*/
+    
+    header .navbar .container{
+        padding: 0 15px;
+    }
+    
+    header .navbar-brand{
+        padding-top: 8px;
+        padding-bottom:10px;
+    }
+    
+    header .navbar ul{
+        padding-bottom: 10px;
+    }
+    
+    header .navbar ul li{
+        text-align: center;
+    }
+    
+    header .navbar-nav li .nav-link{
+        padding-right: 0!important;
+        padding: 8px 0;
+    }
+    
+    header .navbar .get-started{
+        display: none;
+    }
+
+/*========== header-part (navbar) css end ===========*/
+    
+/*============== banner part css start ==============*/
+    
+    #banner-part .banner .overlay{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom:130px;
+    }
+    
+    #banner-part .banner h2{
+        font-size: 26px;
+    }
+    
+    #banner-part .banner h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    #banner-part .banner p{
+        padding-right: 0;
+        font-size: 12px;
+    }
+    
+    #banner-part .button a{
+        margin-right: 0;
+        padding: 13px 22px;
+        margin: 0 15px;
+    }
+    
+    #banner-part .prev{
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        font-size: 23px;
+        line-height: 36px;
+        top: 57%;
+    }
+    
+    #banner-part .next{
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        font-size: 23px;
+        line-height: 36px;
+        top: 57%;
+    }
+    
+    #banner-part .support .online{
+        padding: 20px 0;
+    }
+    
+    #banner-part .support .online h2{
+        font-size: 20px;
+    }
+    
+/*=============== banner part css end ===============*/
+    
+/*============== about part css start ===============*/
+    
+    #about-part .item .about-slider:before{
+        width: 400px;
+    }
+    
+    #about-part .item .about-slider:after{
+        width: 400px;
+    }
+    
+    #about-part .item .la:before{
+        left:405px;
+    }
+    
+    #about-part .item .la:after{
+        right: 405px;
+    }
+    
+    #about-part .text{
+        padding-top: 50px;
+    }
+    
+    #about-part .text a{
+        margin-right:20px;
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+/*=============== about part css end ================*/
+
+/*============ counter-up part css start ============*/
+    
+    #counter-up-part{
+        padding: 20px 0;
+    }
+    #counter-up-part .count{
+        padding: 20px 0;
+    }
+    
+    #counter-up-part h1{
+        font-size: 34px;
+    }
+    
+    #counter-up-part h2{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+/*============ counter-up part css end ==============*/
+    
+/*============= courses part css start ==============*/
+    
+    #courses-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #courses-part .item .people{
+        flex-direction: column;
+    }
+    
+    #courses-part .item .people .left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #courses-part .item .people .img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #courses-part .item .people .left .info{
+        text-align: center;
+    }
+    
+    #courses-part .item .people .right{
+        text-align: center;
+    }
+    
+    #courses-part .item .people .right p{
+        margin-top: 0;
+    }
+    
+    #courses-part .item .deg{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #courses-part .item .details{
+        text-align: center;
+    }
+    
+    #courses-part .courses-part-slider .item a{
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+    #courses-part .prev{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:103%;
+        left: 38%;
+    }
+    
+    #courses-part .next{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:103%;
+        right:38%;
+    }
+    
+/*============== courses part css end ===============*/
+    
+/*============== events part css start ==============*/
+    
+    #events-part .title{
+        padding-top: 20px;
+    }
+    
+    #events-part .calendar{
+        padding-bottom: 30px;
+    }
+    
+    #events-part .event .event-text .loca{
+        padding-top: 30px;
+        padding-bottom:68px;
+    }
+    
+/*=============== events part css end ===============*/
+    
+/*============ testimonial part css start ===========*/
+    
+    #testimonial-part .accordion{
+        margin-top: 70px;
+    }
+    
+/*============= testimonial part css end ============*/
+    
+/*============== teacher part css start =============*/
+    
+    #teacher-part{
+        padding-bottom: 25px;
+    }
+    #teacher-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #teacher-part .prev{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height:36px;
+        top:108%;
+        left: 38%;
+    }
+    
+    #teacher-part .next{
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        line-height: 36px;
+        top:108%;
+        right: 38%;
+    }
+    
+/*=============== teacher part css end ==============*/
+    
+/*================ blog part css start ==============*/
+    
+    .top-blog-part .blog .text h2{
+        margin-top:29%;
+    }
+    
+    .top-blog-part .blog:hover .text h2{
+        margin-top:27%;
+    }
+    
+    .bottom-blog-part .text .details{
+        bottom: 3px;
+    }
+    
+/*================= blog part css end ===============*/
+    
+/*=============== footer part css start =============*/
+    
+    #footer-part .middle ul li a:hover{
+        padding-left: 10px;
+    }
+    
+/*================ footer part css end ==============*/
+    
+/*============ footer image part css start ==========*/
+    
+    #footer-end-img-part .slick-current .overlay{
+       transform: scale(0); 
+    }
+
+   #footer-end-img-part .slick-current a{
+        transform:translate(-50%,-50%)rotate(0deg);
+        opacity: 0;
+    }
+
+   #footer-end-img-part .slick-current:hover a{
+        transform:translate(-50%,-50%)rotate(360deg);
+    }
+    
+/*============= footer image part css end ===========*/
+    
+/*=========== back to top button css =========*/
+    
+    .back-to-top{
+        right: 25px;
+        bottom: 37px;
+    }
+    
+    .back-to-top i{
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+    }
+    
+}
+
+/*=======================================================
+             Medium devices responsive css end
+=======================================================*/
+
+
+
+/*========================================================
+         Large devices (desktops, 992px and up)
+========================================================*/
+
+@media (min-width:992px) and (max-width:1199.98px){
+    
+    .title p{
+        padding: 0 240px;
+    }
+    
+/*========= header-part (navbar) css start ==========*/
+    
+    header .navbar-brand{
+        padding-top: 15px;
+        padding-bottom:22px;
+    }
+    
+    header .navbar-nav li .nav-link{
+        padding-right:28px!important;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    
+    header .get-started a{
+        margin-left: 25px;
+        font-size: 15px;
+        margin-top: 3px;
+    }
+
+/*========== header-part (navbar) css end ===========*/
+    
+/*============== banner part css start ==============*/
+    
+    #banner-part .banner .overlay{
+        text-align: center;
+        padding-top:110px;
+        padding-bottom:200px;
+    }
+    
+    #banner-part .banner h1{
+        margin-bottom: 20px;
+    }
+    
+    #banner-part .banner p{
+        padding:0 90px;
+    }
+    
+    #banner-part .button a{
+        margin-right: 0;
+        padding: 13px 22px;
+        margin: 0 15px;
+    }
+    
+    #banner-part .prev{
+        left: 30px;
+        top: 57%;
+    }
+    
+    #banner-part .next{
+        right: 30px;
+        top: 57%;
+    }
+    
+/*=============== banner part css end ===============*/
+    
+/*============== about part css start ===============*/
+    
+    #about-part .item .about-slider:before{
+        width: 270px;
+    }
+    
+    #about-part .item .about-slider:after{
+        width: 270px;
+    }
+    
+    #about-part .item .la:before{
+        left:275px;
+    }
+    
+    #about-part .item .la:after{
+        right: 275px;
+    }
+    
+    #about-part .text{
+        padding-top: 50px;
+    }
+    
+    #about-part .text a{
+        margin-right:20px;
+        padding: 12px 18px;
+    }
+    
+/*=============== about part css end ================*/
+
+/*============ counter-up part css start ============*/
+    
+    #counter-up-part{
+        padding: 20px 0;
+    }
+    #counter-up-part .count{
+        padding: 20px 0;
+    }
+    
+/*============ counter-up part css end ==============*/
+    
+/*============= courses part css start ==============*/
+    
+    #courses-part .title{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #courses-part .prev{
+        top:105%;
+        left: 5%;
+    }
+    
+    #courses-part .next{
+        top:105%;
+        right:5%;
+    }
+    
+/*============== courses part css end ===============*/
+    
+/*============== events part css start ==============*/
+    
+    #events-part .title{
+        padding-top: 20px;
+    }
+    
+    #events-part .event .event-text h3{
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
+    
+    #events-part .event .event-text .detail{
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    
+    #events-part .event .event-text .loca{
+        font-size: 12px;
+        padding-right: 0;
+        padding-bottom: 4px;
+    }
+
+    #events-part .event .event-text a{
+        font-size: 15px;
+        margin-bottom: -8px;
+    }
+    
+    #testimonial-part .testimonial-slider .prev{
+        top: 100%;
+        left: 15%;
+    }
+    
+    #testimonial-part .testimonial-slider .next{
+        top: 100%;
+        left: 25%;
+    }
+    
+/*=============== events part css end ===============*/
+    
+/*============== teacher part css start =============*/
+    
+    #teacher-part{
+        padding-bottom: 25px;
+    }
+    
+    #teacher-part .prev{
+        top:108%;
+        left: 5%;
+    }
+    
+    #teacher-part .next{
+        top:108%;
+        right: 5%;
+    }
+    
+/*=============== teacher part css end ==============*/
+    
+/*================ blog part css start ==============*/
+    
+    .top-blog-part .blog .text h2{
+        margin-top:10%;
+    }
+    
+    .top-blog-part .blog .text h2 a{
+        font-size: 17px;
+    }
+    
+    .top-blog-part .blog:hover .text h2{
+        margin-top:5%;
+    }
+    
+    .top-blog-part .text .blog-footer p{
+        font-size: 11px;
+        margin-right: -9px;
+    }
+    
+    .top-blog-part .text .blog-footer .view p{
+        padding-left: 0;
+    }
+    
+    .bottom-blog-part .blog .icons{
+        margin-top: 5px;
+    }
+    
+    .bottom-blog-part .blog:hover .icons{
+        margin-right: 5px;
+    }
+    
+    .bottom-blog-part .text .details{
+        bottom: -3px;
+    }
+    
+    .bottom-blog-part .text .nam-l{
+        font-size: 13px;
+    }
+    
+/*================= blog part css end ===============*/
+    
+/*=============== footer part css start =============*/
+    
+    #footer-part .middle ul li a:hover{
+        padding-left: 10px;
+    }
+    
+/*================ footer part css end ==============*/
+    
+}
+
+/*=======================================================
+             Large devices responsive css end
+=======================================================*/

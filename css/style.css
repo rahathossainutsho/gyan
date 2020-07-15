@@ -6,26 +6,27 @@ Author Email: rahathossainutsho21a@gmail.com
 Version:---
 ----------------
 
-----------------
-Table of Content
-----------------
-1.header-top-part
-2.header(navbar)-part
-3.banner-part
-4.about-us-part
-5.counter-up-part
-6.courses-part-part
-7.events-part-part
-8.testimonial-part
-9.teacher-part
-10.blog-part
-11.footer-part
+----------------------------------
+1.Table of Content of index pages
+----------------------------------
+Header-top-part
+Header(navbar)-part
+Banner-part
+About-us-part
+Counter-up-part
+Courses-part-part
+Events-part-part
+Testimonial-part
+Teacher-part
+Blog-part
+Footer-part
 */
 
 * {
     margin: 0;
     padding: 0;
     box-shadow: border-box;
+    outline: 0;
 }
 
 html,body{
@@ -57,11 +58,10 @@ a,a:hover,a:focus {
 
 .title h2 {
     text-align: center;
-    line-height: 24px;
     color: #2d3e50;
     font-size: 31px;
     font-family: 'Arimo', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -115,6 +115,7 @@ a,a:hover,a:focus {
     transition: .4s;
     color: #fff;
     font-family: 'Arimo', sans-serif;
+    display: inline-block;
 }
 
 #header-top-part .right p {
@@ -147,6 +148,15 @@ header .navbar{
 header .navbar-brand{
     padding-top:30px;
     padding-bottom:35px;
+}
+
+header .navbar-toggler{
+    outline: 0;
+}
+
+header .navbar-toggler i{
+    font-size: 26px;
+    color: #fbaa33;
 }
 
 header .navbar-nav li .nav-link{
@@ -239,7 +249,6 @@ header .get-started a:hover:after{
 #banner-part .banner {
     background: url(../images/banner-part/banner-img1.png) no-repeat center;
     background-size: cover;
-    outline: 0;
 }
 
 #banner-part .two {
@@ -262,6 +271,7 @@ header .get-started a:hover:after{
     width: 100%;
     padding-top: 140px;
     padding-bottom: 230px;
+    text-align: left;
 }
 
 #banner-part .two .overlay {
@@ -281,7 +291,6 @@ header .get-started a:hover:after{
     color: #fff;
     font-weight: 400;
     font-family: 'Arimo', sans-serif;
-    text-align: left;
     text-transform: uppercase;
     margin-bottom: 0;
 }
@@ -291,7 +300,6 @@ header .get-started a:hover:after{
     color: #fff;
     font-weight: 700;
     font-family: 'Arimo', sans-serif;
-    text-align: left;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -301,7 +309,6 @@ header .get-started a:hover:after{
     color: #fff;
     font-weight: 400;
     font-family: 'Arimo', sans-serif;
-    text-align: left;
     line-height: 24px;
     padding-right: 540px;
     margin-bottom: 60px;
@@ -370,7 +377,7 @@ header .get-started a:hover:after{
     height: 60px;
     width: 60px;
     text-align: center;
-    line-height: 60px;
+    line-height: 58px;
     border-radius: 50%;
     border: 1px solid #fff;
     transition: .4s;
@@ -394,7 +401,7 @@ header .get-started a:hover:after{
     height: 60px;
     width: 60px;
     text-align: center;
-    line-height: 60px;
+    line-height: 58px;
     border-radius: 50%;
     border: 1px solid #fff;
     transition: .4s;
@@ -494,8 +501,8 @@ header .get-started a:hover:after{
     width: 10px;
     border-radius: 50%;
     border: 1px solid #a3a19f;
-    outline: 0;
     cursor: pointer;
+    outline: 0;
 }
 
 #about-part ul .slick-active button {
@@ -510,7 +517,7 @@ header .get-started a:hover:after{
 #about-part .item .about-slider .img img{
     width: 100%;
     clip-path: polygon(23% 0, 100% 0, 77% 100%, 0 100%);
-    height: 342px;
+    height: auto;
 }
 
 #about-part .item .about-slider:before {
@@ -533,10 +540,6 @@ header .get-started a:hover:after{
     right: 0;
     bottom: -10px;
     border-radius: 1px;
-}
-
-#about-part .item .about-slider img{
-    outline: 0;
 }
 
 #about-part .item .la {
@@ -697,7 +700,6 @@ header .get-started a:hover:after{
 
 #courses-part .courses-part-slider .slide{
     width: 33.33333333333333%;
-    outline: 0;
     padding: 15px;
     padding-bottom: 35px;
 }
@@ -725,13 +727,12 @@ header .get-started a:hover:after{
 
 #courses-part .item .img-up {
     width: 100%;
-    height: 215px;
     position: relative;
 }
 
 #courses-part .item .img-up img {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -785,10 +786,13 @@ header .get-started a:hover:after{
     margin-right: 10px;
 }
 
+#courses-part .item .people .info{
+    text-align: left;
+}
+
 #courses-part .item .people .info h3 {
     font-size: 13px;
     font-weight: 400;
-    text-align: left;
     font-family: 'Arimo', sans-serif;
     color: #444444;
 }
@@ -796,31 +800,32 @@ header .get-started a:hover:after{
 #courses-part .item .people .info h1 {
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
     font-family: 'Arimo', sans-serif;
     color: #444444;
     margin-top: 4px;
     text-transform: capitalize;
 }
 
+#courses-part .item .people .right{
+    text-align: right;
+}
+
 #courses-part .item .people .star i {
     font-size: 14px;
     color: #fbaa33;
-    margin-left:
 }
 
 #courses-part .item .people .right p {
     color: #999999;
     font-size: 13px;
     font-family: 'Arimo', sans-serif;
-    text-align: right;
     font-weight: 400;
     margin-top: 10px;
 }
 
 #courses-part .item .deg {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     font-family: 'Arimo', sans-serif;
     color: #222222;
@@ -895,7 +900,6 @@ header .get-started a:hover:after{
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
-    outline: 0;
     overflow: hidden;
 }
 
@@ -995,6 +999,12 @@ header .get-started a:hover:after{
 #events-part .calendar img{
     width: 100%;
     height: auto;
+    transition: .4s;
+}
+#events-part .calendar img:hover{
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 #events-part .event{
@@ -1166,10 +1176,6 @@ header .get-started a:hover:after{
     background: #f5f5f5;
 }
 
-#testimonial-part .testimonial-slider .slide {
-    outline: 0;
-}
-
 #testimonial-part .testimonial-slider .prev {
     position: absolute;
     top: 28.5%;
@@ -1213,9 +1219,15 @@ header .get-started a:hover:after{
     background: #2d3e50;
 }
 
+#testimonial-part .testimonial-slider .slide{
+    display: flex;
+    align-items: center;
+}
+
 #testimonial-part .img{
     position: relative;
-    padding: 10px 0;
+    width: 50%;
+    padding: 10px 15px;
 }
 
 #testimonial-part .img img{
@@ -1229,7 +1241,7 @@ header .get-started a:hover:after{
     content: '';
     background: url(../images/testimonial-part/img-upper-line-shape.png) no-repeat center;    
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 0px;
 }
 
@@ -1239,8 +1251,13 @@ header .get-started a:hover:after{
     content: '';
     background: url(../images/testimonial-part/img-lower-line-shape.png) no-repeat center;    
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 0px;
+}
+
+#testimonial-part .details{
+    padding: 0 15px;
+    width: 50%;
 }
 
 #testimonial-part .details p {
@@ -1358,7 +1375,6 @@ header .get-started a:hover:after{
 #teacher-part .teacher-slider .slide{
     width:25%;
     padding: 0 15px;
-    outline: 0;
 }
 
 #teacher-part .teacher-slider .item .img{
@@ -1473,10 +1489,10 @@ header .get-started a:hover:after{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     border-radius: 50%;
     border: 1px solid #2d3e50;
     transition: .4s;
@@ -1610,11 +1626,12 @@ header .get-started a:hover:after{
 
 .top-blog-part h2 a{
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     font-family: 'Arimo', sans-serif;
     text-align: left;
     padding: 0 30px;
+    display: inline-block;
 }
 
 .top-blog-part .text .website{
@@ -1706,7 +1723,7 @@ header .get-started a:hover:after{
 
 .bottom-blog-part .text .nam-l{
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
     font-family: 'Arimo', sans-serif;
     text-align: left;
@@ -1774,7 +1791,7 @@ header .get-started a:hover:after{
     background: #fff;
     border-radius: 50%;
     transition: .4s;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #footer-part .left .icons li a i:hover{
@@ -1867,7 +1884,6 @@ header .get-started a:hover:after{
 
 #footer-end-img-part .img{
     position: relative;
-    outline: 0;
 }
 
 #footer-end-img-part .img img{

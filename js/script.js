@@ -31,7 +31,7 @@ new WOW().init();
 $('.banner-slider').slick({
     dots:false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 1,
@@ -59,7 +59,7 @@ $('.banner-slider').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]
@@ -72,9 +72,9 @@ $('.banner-slider').slick({
 $('.about-slider').slick({
     dots:true,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false,
@@ -85,7 +85,6 @@ $('.about-slider').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
         }
       },
       {
@@ -99,7 +98,8 @@ $('.about-slider').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false
         }
       }
     ]
@@ -112,9 +112,9 @@ $('.about-slider').slick({
 $('.courses-part-slider').slick({
     dots:false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<i class="fa fa-angle-left prev" aria-hidden="true"></i>',
@@ -123,7 +123,7 @@ $('.courses-part-slider').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false
@@ -132,7 +132,7 @@ $('.courses-part-slider').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow:1,
           slidesToScroll: 1
         }
       },
@@ -140,7 +140,7 @@ $('.courses-part-slider').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]
@@ -162,9 +162,9 @@ $('.counter').counterUp({
 $('.testimonial-slider').slick({
     dots:false,
     infinite: true,
-    speed:1500,
+    speed:1000,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<i class="fa fa-angle-left prev" aria-hidden="true"></i>',
@@ -190,7 +190,8 @@ $('.testimonial-slider').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false
         }
       }
     ]
@@ -203,9 +204,9 @@ $('.testimonial-slider').slick({
 $('.teacher-slider').slick({
     dots:false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<i class="fa fa-angle-left prev" aria-hidden="true"></i>',
@@ -214,7 +215,7 @@ $('.teacher-slider').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: false
@@ -231,7 +232,7 @@ $('.teacher-slider').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]
@@ -247,7 +248,7 @@ $('.footer-slider').slick({
     speed:1000,
     autoplay: true,
     centerMode:true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows:false,
@@ -255,9 +256,9 @@ $('.footer-slider').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: true,     
           dots: false
         }
       },
@@ -265,7 +266,7 @@ $('.footer-slider').slick({
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 1,   
         }
       },
       {
