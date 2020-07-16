@@ -512,6 +512,7 @@ header .get-started a:hover:after{
 
 #about-part .item .about-slider .img{
     outline: 0;
+    clip-path: polygon(23% 0, 100% 0, 77% 100%, 0 100%);
 }
 
 #about-part .item .about-slider .img img{
