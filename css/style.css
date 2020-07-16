@@ -1672,16 +1672,16 @@ header .get-started a:hover:after{
     padding: 0;
 }
 
-.top-blog-part .blog:hover .text .icons{
+.top-blog-part .blog .text:hover .icons{
     opacity: 1;
     margin-right: 20px;
 }
 
-.top-blog-part .blog:hover .text h2{
+.top-blog-part .blog .text:hover h2{
     margin-top:17%;
 }
 
-.top-blog-part .blog:hover .text .blog-footer{
+.top-blog-part .blog .text:hover .blog-footer{
     opacity: 1;
 }
 
@@ -1706,7 +1706,7 @@ header .get-started a:hover:after{
     transition: .4s;
 }
 
-.bottom-blog-part .blog:hover .icons{
+.bottom-blog-part .blog .text:hover .icons{
     opacity: 1;
     margin-right: 15px;
 }
