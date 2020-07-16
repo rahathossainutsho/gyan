@@ -333,7 +333,7 @@
         padding: 0 30px;
     }
     
-    .top-blog-part .blog:hover .text h2{
+    .top-blog-part .blog .text:hover h2{
         margin-top: 0;
     }
     
@@ -731,7 +731,7 @@
         margin-top:16%;
     }
     
-    .top-blog-part .blog:hover .text h2{
+    .top-blog-part .blog .text:hover h2{
         margin-top:10%;
     }
     
@@ -739,7 +739,7 @@
         margin-top: 10px;
     }
     
-    .bottom-blog-part .blog:hover .icons{
+    .bottom-blog-part .blog .text:hover .icons{
         margin-right: 10px;
     }
     
@@ -1111,7 +1111,7 @@
         margin-top:29%;
     }
     
-    .top-blog-part .blog:hover .text h2{
+    .top-blog-part .blog .text:hover h2{
         margin-top:27%;
     }
     
@@ -1358,7 +1358,7 @@
         font-size: 17px;
     }
     
-    .top-blog-part .blog:hover .text h2{
+    .top-blog-part .blog .text:hover h2{
         margin-top:5%;
     }
     
@@ -1375,7 +1375,7 @@
         margin-top: 5px;
     }
     
-    .bottom-blog-part .blog:hover .icons{
+    .bottom-blog-part .blog .text:hover .icons{
         margin-right: 5px;
     }
     
