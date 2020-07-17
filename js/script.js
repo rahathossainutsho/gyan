@@ -3,7 +3,7 @@
 $(window).scroll(function(){
     var scrollAmount = $(window).scrollTop()
     
-    if(scrollAmount > 490){
+    if(scrollAmount > 350){
         $(".manubar").addClass("fixed")
     }else{
         $(".manubar").removeClass("fixed")
@@ -11,7 +11,7 @@ $(window).scroll(function(){
     
     //====== back to top button js =====
     
-    if(scrollAmount > 490){
+    if(scrollAmount > 400){
       $(".back-to-top").fadeIn();
     }else{
       $(".back-to-top").fadeOut();
@@ -280,3 +280,25 @@ $('.footer-slider').slick({
 })
 
 //======= footer part slider js end ======//
+
+
+
+//=========================== about us page js start ========================//
+
+
+//========== veno box js start ========//
+
+$('.venobox').venobox(); 
+
+//=========== veno box js end ========//
+
+
+//=========================== about us page js end ========================//
+
+
+
+
+
+
+
+
