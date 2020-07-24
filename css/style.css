@@ -33,6 +33,14 @@ html,body{
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+#error{
+    overflow-y: hidden;
+}
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     padding: 0;
@@ -111,7 +119,7 @@ a,a:hover,a:focus {
 }
 
 #header-top-part .right a {
-    font-size: 16px;
+    font-size: 15px;
     transition: .4s;
     color: #fff;
     font-family: 'Arimo', sans-serif;
@@ -167,7 +175,7 @@ header .navbar-nav li .nav-link{
     transition: .4s;
     font-weight: 400;
     text-transform: capitalize;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 header .navbar-nav li .nav-link:hover {
@@ -187,11 +195,12 @@ header .get-started a {
     background:#fbaa33;
     margin-left: 60px;
     display: inline-block;
-    margin-top: 2px;
+    margin-top: 10px;
     font-family: 'Arimo', sans-serif;
     font-weight: 400;
     font-size: 18px;
     z-index: 999;
+    overflow: hidden;
 }
 
 header .get-started a:after{
@@ -200,7 +209,7 @@ header .get-started a:after{
     left: 0;
     width:0;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 3px;
     transition: .4s;
     background:  #2d3e50;
     content: '';
@@ -235,7 +244,7 @@ header .get-started a:hover:after{
 }
 
 /*=========================================================
-                    manu part css end
+                header (navbar) part css end
 =========================================================*/
 
 /*=========================================================
@@ -340,17 +349,20 @@ header .get-started a:hover:after{
     background:#fbaa33;
     content: '';
     z-index: -1;
+    border-radius: 5px;
 }
 
 #banner-part .button a:after{
     position: absolute;
     top: 0;
+    left: 0;
     width:0;
     height: 100%;
     transition: .4s;
     background:#2d3e50;
     content: '';
     z-index: -1;
+    border-radius: 3px;
 }
 
 #banner-part .button .start:after{
@@ -418,7 +430,7 @@ header .get-started a:hover:after{
 }
 
 #banner-part .support{
-    margin-top: -94px;
+    margin-top: -101px;
 }
 
 #banner-part .support .online {
@@ -426,7 +438,7 @@ header .get-started a:hover:after{
     background: #f5f5f5;
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 30px 0;
+    padding: 35px 30px;
     transition: .4s;
 }
 
@@ -596,6 +608,7 @@ header .get-started a:hover:after{
     text-transform: capitalize;
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 #about-part .text a:before{
@@ -615,7 +628,7 @@ header .get-started a:hover:after{
     top: 0;
     width:0;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 3px;
     transition: .4s;
     background:#2d3e50;
     content: '';
@@ -932,11 +945,6 @@ header .get-started a:hover:after{
     width: 100%;
 }
 
-#courses-part .item .enroll:hover:after{
-    width:0;
-    right: 0;
-}
-
 #courses-part .prev {
     position: absolute;
     top: 50%;
@@ -1123,17 +1131,12 @@ header .get-started a:hover:after{
     background:#fbaa33;
     content: '';
     z-index: -1;
-    border-radius: 5px;   
+    border-radius: 3px;   
 }
 
 #events-part .event:hover .event-text a:after{
     width: 100%;
 }
-
-#events-part .event .event-text a:hover:after{
-    width:0;
-}
-
 
 #events-part .event:hover {
     -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
@@ -1461,24 +1464,13 @@ header .get-started a:hover:after{
 #teacher-part .teacher-slider .item .text p:before{
     position: absolute;
     bottom: -15px;
-    width: 50px;
-    height: 3px;
+    width: 66px;
+    height: 4px;
     border-radius: 1px;
-    background: #fbaa33;
+    background:url(../images/teacher-part/line-shape.png) no-repeat center;
     content: '';
-    left: 43%;
+    left: 50%;
     transform: translateX(-50%);
-}
-
-#teacher-part .teacher-slider .item .text p:after{
-    position: absolute;
-    bottom: -15px;
-    width: 10px;
-    height: 3px;
-    border-radius: 1px;
-    background: #fbaa33;
-    content: '';
-    left:65%;
 }
 
 #teacher-part .teacher-slider .item:hover .text h3{
@@ -2052,6 +2044,22 @@ header .get-started a:hover:after{
 =========================================================*/
 
 /*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .ab-home{
+    color:#2d3e50;
+}
+
+header .navbar-nav li .about-active{
+    color: #fbaa33;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
               banner part css start
 ==============================================*/
 
@@ -2080,6 +2088,7 @@ header .get-started a:hover:after{
     background: transparent;
     text-align: center;
     display: inline-flex;
+    align-items: center;
 }
 
 #about-page-banner ol li a{
@@ -2087,6 +2096,7 @@ header .get-started a:hover:after{
     font-weight: 400;
     color: #f1f1f1;
     font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
 }
 
 #about-page-banner ol .active:before{
@@ -2097,10 +2107,12 @@ header .get-started a:hover:after{
 
 #about-page-banner ol .active{
     color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
 }
 
 #about-page-banner .support{
-    margin-top: -95px;
+    margin-top: -101px;
 }
 
 #about-page-banner .support .online {
@@ -2108,7 +2120,7 @@ header .get-started a:hover:after{
     background: #f5f5f5;
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 30px 0;
+    padding: 35px 30px;
     transition: .4s;
 }
 
@@ -2200,7 +2212,7 @@ header .get-started a:hover:after{
     width: 362px;
     height: 4px;
     content: '';
-    background: url(../images/about-us-page/video-part/up-line-shape.png);
+    background: url(../images/about-us-page/video-part/up-line-shape.png) no-repeat center;
     position: absolute;
     left: 0;
     top:-10px;
@@ -2211,7 +2223,7 @@ header .get-started a:hover:after{
     width: 362px;
     height: 4px;
     content: '';
-    background: url(../images/about-us-page/video-part/down-line-shape.png);
+    background: url(../images/about-us-page/video-part/down-line-shape.png) no-repeat center;
     position: absolute;
     right: 0;
     bottom:-10px;
@@ -2276,6 +2288,7 @@ header .get-started a:hover:after{
     text-transform: capitalize;
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 #about-video-part .enroll a:before{
@@ -2295,7 +2308,7 @@ header .get-started a:hover:after{
     top: 0;
     width:0;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 3px;
     transition: .4s;
     background:#2d3e50;
     content: '';
@@ -2322,11 +2335,27 @@ header .get-started a:hover:after{
 =========================================================*/
 
 /*==============================================
+             header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .cours-home{
+    color:#2d3e50;
+}
+
+header .navbar-nav li .cours-active{
+    color: #fbaa33;
+}
+
+/*==============================================
+             header (navbar) part css end
+==============================================*/
+
+/*==============================================
               banner part css start
 ==============================================*/
 
 #courses-page-banner .banner{
-    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background: url(../images/our_courses_page/banner.png) no-repeat center;
     background-size: cover;
 }
 
@@ -2350,6 +2379,7 @@ header .get-started a:hover:after{
     background: transparent;
     text-align: center;
     display: inline-flex;
+    align-items: center;
 }
 
 #courses-page-banner ol li a{
@@ -2357,6 +2387,7 @@ header .get-started a:hover:after{
     font-weight: 400;
     color: #f1f1f1;
     font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
 }
 
 #courses-page-banner ol .active:before{
@@ -2367,10 +2398,12 @@ header .get-started a:hover:after{
 
 #courses-page-banner ol .active{
     color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
 }
 
 #courses-page-banner .support{
-    margin-top: -95px;
+    margin-top: -101px;
 }
 
 #courses-page-banner .support .online {
@@ -2378,7 +2411,7 @@ header .get-started a:hover:after{
     background: #f5f5f5;
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 30px 0;
+    padding: 35px 30px;
     transition: .4s;
 }
 
@@ -2663,11 +2696,6 @@ header .get-started a:hover:after{
     width: 100%;
 }
 
-#courses .item .enroll:hover:after{
-    width:0;
-    right: 0;
-}
-
 /*==============================================
               courses part css end
 ==============================================*/
@@ -2675,6 +2703,2016 @@ header .get-started a:hover:after{
 /*=========================================================
                  Our_courses page css end
 =========================================================*/
+
+
+
+
+/*=========================================================
+                  Our_events page css start
+=========================================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .event-home{
+    color:#2d3e50;
+}
+
+header .navbar-nav li .event-active{
+    color: #fbaa33;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#events-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#events-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#events-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#events-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#events-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#events-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#events-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#events-page-banner .support{
+    margin-top: -101px;
+}
+
+#events-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#events-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#events-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#events-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#events-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#events-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#events-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+             events part css start
+==============================================*/
+
+#events{
+    padding-top: 100px;
+    margin-bottom: -30px;
+}
+
+#events .nav-pills{
+    display: inline-flex;
+    border-radius: 28px;
+    background:#2d3e50;
+    margin-bottom: 60px !important;
+}
+
+#events .nav-pills > .nav-item > .nav-link{
+    font-size: 20px;
+    color: #fff;
+    border-radius: 28px;
+}
+
+#events .nav-pills > .nav-item .active{
+    background: #fbaa33;
+}
+
+#events .event{
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: .4s;
+    margin-bottom: 30px;
+}
+
+#events .event .image {
+    position: relative;
+}
+
+#events .event .image img{
+    width: 100%;
+    height: auto;
+}
+
+#events .event .image .box {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #ff3232;
+}
+
+#events .event .image .box p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#events .event .event-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    transition: .4s;
+    padding-bottom: 10px;
+}
+
+#events .event .event-text .detail {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-bottom: 9px;
+}
+
+#events .event .event-text .loca{
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+#events .event .event-text i {
+    color: #2d3e50;
+    transition: .4s;
+}
+
+#events .event .event-text a{
+    font-family: 'Arimo', sans-serif;
+    background: transparent;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+#events .event .event-text a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#events .event .event-text a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;   
+}
+
+#events .event:hover .event-text a:after{
+    width: 100%;
+}
+
+#events .event:hover {
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    border-color: #ebebeb;
+}
+
+#events .event:hover h3 {
+    color: #fbaa33;
+}
+
+#events .event:hover i {
+    color: #fbaa33;
+}
+
+#events .event:hover a {
+    background: #fbaa33;
+}
+
+#events .two .image .box {
+    background: #3d7e34;
+}
+
+#events .three .image .box {
+    background: #0000db;
+}
+
+#events .four .image .box {
+    background: red;
+}
+
+#events .five .image .box {
+    background: #ff009d;
+}
+
+#events .six .image .box {
+    background: #fbaa33;
+}
+
+/*==============================================
+              events part css end
+==============================================*/
+
+/*=========================================================
+                 Our_events page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+              Event details page css start
+=========================================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .event-d-home{
+    color:#2d3e50;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#event-details-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#event-details-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#event-details-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#event-details-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#event-details-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#event-details-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#event-details-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#event-details-page-banner .support{
+    margin-top: -101px;
+}
+
+#event-details-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#event-details-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#event-details-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#event-details-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#event-details-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#event-details-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#event-details-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+             event details part css start
+==============================================*/
+
+#event-details-part{
+    padding-top: 100px;
+    margin-bottom: -30px;
+}
+
+#event-details-part .event-details .img{
+    width: 100%;
+    position: relative;
+}
+
+#event-details-part .event-details .img img{
+    width: 100%;
+    height: auto;
+}
+
+#event-details-part .event-details .img .box {
+    height:100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #3d7e34;
+}
+
+#event-details-part .event-details .img .box p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#event-details-part .event-details .event-title h1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#event-details-part .event-details .rating i{
+    color: #ffc712;
+    font-size: 18px;
+}
+
+#event-details-part .event-details .seat p{
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;    
+}
+
+#event-details-part .event-details .details p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 26px;
+}
+
+#event-details-part .event-details .location{
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+#event-details-part .event-details .location .loca{
+    display: inline-block;
+    font-size: 13px;
+    color: #979797;
+    font-family: 'Arimo', sans-serif;
+    padding-right: 26px;
+    padding-bottom: 12px;
+}
+
+#event-details-part .event-details .location i{
+    color: #2d3e50;
+    font-size: 18px;
+}
+
+#event-details-part .event-details .location .join a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 40px;
+    font-family: 'Arimo', sans-serif;
+    background: transparent !important;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    margin-bottom: -5px;
+}
+
+#event-details-part .event-details .location .join a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#event-details-part .event-details .location .join .not:before{
+    background:#2d3e50;
+}
+
+#event-details-part .event-details .location .join a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;   
+}
+
+#event-details-part .event-details .location .join .not:after{
+    background:#fbaa33;
+}
+
+#event-details-part .event-details .location .join a:hover:after{
+    width: 100%;
+}
+
+
+
+
+#event-details-part .other h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    padding-bottom: 30px;
+}
+
+#event-details-part .event{
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    transition: .4s;
+    margin-bottom: 30px;
+}
+
+#event-details-part .event .image {
+    position: relative;
+}
+
+#event-details-part .event .image img{
+    width: 100%;
+    height: auto;
+}
+
+#event-details-part .event .image .box {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #3d7e34;
+}
+
+#event-details-part .event .image .box p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    width: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#event-details-part .event .event-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #2d3e50;
+    transition: .4s;
+    padding-bottom: 10px;
+}
+
+#event-details-part .event .event-text .detail {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-bottom: 9px;
+}
+
+#event-details-part .event .event-text .loca{
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Arimo', sans-serif;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+#event-details-part .event .event-text i {
+    color: #2d3e50;
+    transition: .4s;
+}
+
+#event-details-part .event .event-text a{
+    font-family: 'Arimo', sans-serif;
+    background: transparent;
+    transition: .4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+#event-details-part .event .event-text a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#event-details-part .event .event-text a:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;   
+}
+
+#event-details-part .event:hover .event-text a:after{
+    width: 100%;
+}
+
+#event-details-part .event:hover {
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.15);
+    border-color: #ebebeb;
+}
+
+#event-details-part .event:hover h3 {
+    color: #fbaa33;
+}
+
+#event-details-part .event:hover i {
+    color: #fbaa33;
+}
+
+#event-details-part .event:hover a {
+    background: #fbaa33;
+}
+
+#event-details-part .two .image .box {
+    background: #ff3232;
+}
+
+#event-details-part .three .image .box {
+    background: #0000db;
+}
+
+/*==============================================
+            event details part css end
+==============================================*/
+
+/*=========================================================
+                 Event detalis page css end
+=========================================================*/
+
+
+
+/*=========================================================
+                  Our_teachers page css start
+=========================================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .teach-home{
+    color:#2d3e50;
+}
+
+header .navbar-nav li .teach-active{
+    color: #fbaa33;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#teachers-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#teachers-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#teachers-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#teachers-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#teachers-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#teachers-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#teachers-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#teachers-page-banner .support{
+    margin-top: -101px;
+}
+
+#teachers-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#teachers-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#teachers-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#teachers-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#teachers-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#teachers-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#teachers-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+             teachers part css start
+==============================================*/
+
+#teachers{
+    padding-top: 100px;
+    margin-bottom: -50px;
+}
+
+#teachers .item{
+    width:100%;
+    margin-bottom: 50px;
+}
+
+#teachers .item .img{
+    width:100%;
+    transition: .4s;
+}
+
+#teachers .item .img img{
+    width:100%;
+    height: auto;
+}
+
+#teachers .item .text{
+    width:100%;
+    height: 115px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#teachers .item .text .icons{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: 999;
+    opacity: 0;
+    transition: .4s;
+}
+
+#teachers .item:hover .icons{
+    opacity: 1;
+}
+
+#teachers .item .text .icons a{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#teachers .item .text .icons .last{
+    margin-right: 0;
+}
+
+#teachers .item .text .icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #2d3e50;
+    transition: .4s;
+}
+
+#teachers .item .text .icons a i:hover{
+    background: #fbaa33;
+}
+
+#teachers .item .text h3{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #444444;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+#teachers .item .text p{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+    text-transform: capitalize;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+#teachers .item .text p:before{
+    position: absolute;
+    bottom: -15px;
+    width: 66px;
+    height: 4px;
+    border-radius: 1px;
+    background:url(../images/teacher-part/line-shape.png) no-repeat center;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#teachers .item:hover .text h3{
+    margin-top: 20px;
+}
+
+#teachers .item .img:hover{
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+
+/*==============================================
+              teachers part css end
+==============================================*/
+
+/*=========================================================
+                 Our_teachers page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+              Blog details page css start
+=========================================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .blog-d-home{
+    color:#2d3e50;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#blog-details-page-banner .banner{
+    background: url(../images/about-us-page/banner/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#blog-details-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#blog-details-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#blog-details-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#blog-details-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#blog-details-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#blog-details-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#blog-details-page-banner .support{
+    margin-top: -101px;
+}
+
+#blog-details-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#blog-details-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#blog-details-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#blog-details-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#blog-details-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#blog-details-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#blog-details-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+            blog details part css start
+==============================================*/
+
+#blog-details{
+    padding-top: 100px;
+}
+
+#blog-details .img{
+    padding-bottom: 60px;
+}
+
+#blog-details .img img{
+    width: 100%;
+    height: auto;
+}
+
+#blog-details .post-details .blog-post-by{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fbaa33;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#blog-details .post-details .blog-post-by i{
+    font-size: 12px;
+    padding-right: 12px;
+    color: #fbaa33;
+}
+
+#blog-details .post-details .blog-poster-name{
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 24px;
+    font-family: 'Arimo', sans-serif;   
+    color: #777777;
+}
+
+#blog-details .blog-details-body .blog-details-title{
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#blog-details .blog-details-body .blog-detail{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;  
+    padding-bottom: 38px;
+    padding-left: 30px;
+}
+
+#blog-details .blog-details-body .text-italic{
+    background: #f1f1f1;
+    border-left: 3px solid #fbaa33;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+#blog-details .blog-details-body .text-italic p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;  
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    line-height: 20px;
+    color: #282727;
+    font-style: italic;
+}
+
+#blog-details .blog-details-body .list{
+    padding-bottom: 35px;
+}
+
+#blog-details .blog-details-body .list ul li{
+    font-size: 16px;
+    font-family: 'Arimo', sans-serif;
+    padding-left: 30px;
+    padding-bottom: 28px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#blog-details .tag-head h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #151515;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#blog-details .tags .tag-details ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#blog-details .tags .tag-details ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+    padding: 10px 12px;
+    border:1px solid #dddddd;
+    transition: .4s;
+}
+
+#blog-details .tags .tag-details ul li a:hover{
+    color: #fbaa33;
+    border-color: #fbaa33;
+}
+
+#blog-details .share .share-social ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#blog-details .share{
+    margin-top: 45px;
+}
+
+#blog-details .share .share-social ul li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    background: #fff;
+    border:1px solid #dddddd;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+#blog-details .share .share-social ul li a i:hover{
+    background: #fbaa33;
+    border-color: #fbaa33;
+    color: #fff;
+}
+
+/*==============================================
+             blog details part css end
+==============================================*/
+
+/*=========================================================
+                 Blog detalis page css end
+=========================================================*/
+
+
+
+/*=========================================================
+                   Login page css start
+=========================================================*/
+
+
+/*==============================================
+             header-top part css start
+==============================================*/
+
+#header-top-part .log-active{
+    color: #fbaa33 !important;
+}
+
+/*==============================================
+              header-top part css end
+==============================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .regis-home{
+    color:#2d3e50;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#login-page-banner .banner{
+    background: url(../images/login_page/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#login-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#login-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#login-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#login-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#login-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#login-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#login-page-banner .support{
+    margin-top: -101px;
+}
+
+#login-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#login-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#login-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#login-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#login-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#login-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#login-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+               login css start
+==============================================*/
+
+#login-part{
+    padding-top: 100px;
+}
+
+#login-part .img-part img{
+    width: 100%;
+    height: auto;
+}
+
+#login-part .log-head h3{
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Arimo', sans-serif;
+    color: #2e3e50;
+    padding-bottom: 10px;
+}
+
+#login-part .log-head h6{
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#login-part .log-head h6:after{
+    width: 60px;
+    height: 4px;
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: #2e3e50;
+    border-radius: 5px;
+}
+
+#login-part form .info{
+    position: relative;
+}
+
+#login-part form .info input{
+    width: 100%;
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 0;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#login-part form .info i{
+    position: absolute;
+    right: 1px;
+    color: #999999;
+    top: 64px;
+    font-size: 16px;
+}
+
+#login-part form .info .lock{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#login-part form .info input:focus{
+    border-color:#2e3e50;
+}
+
+#login-part form .info input:focus::placeholder{
+    color:#2e3e50;
+}
+
+#login-part form .info i:focus{
+    color:#2e3e50;
+}
+
+#login-part form .button button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+#login-part form .button button:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#login-part form .button button:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+    left: 0;
+}
+
+#login-part form .button button:hover:after{
+    width: 100%;
+}
+
+#login-part .f-s a{
+    font-size: 15px;
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    transition: .4s;
+}
+
+#login-part .f-s .sign{
+    color: #2d3e50;
+}
+
+#login-part .f-s a:hover{
+    color: #2d3e50;
+}
+
+#login-part .f-s p{
+    font-size: 15px;
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+}
+
+/*==============================================
+               login part css end
+==============================================*/
+
+/*=========================================================
+                  Login page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+                Registration page css start
+=========================================================*/
+
+
+/*==============================================
+             header-top part css start
+==============================================*/
+
+#header-top-part .registration-active{
+    color: #fbaa33 !important;
+}
+
+/*==============================================
+              header-top part css end
+==============================================*/
+
+/*==============================================
+         header (navbar) part css start
+==============================================*/
+
+header .navbar-nav li .log-home{
+    color:#2d3e50;
+}
+
+/*==============================================
+          header (navbar) part css end
+==============================================*/
+
+/*==============================================
+              banner part css start
+==============================================*/
+
+#registration-page-banner .banner{
+    background: url(../images/login_page/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+#registration-page-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 145px;
+    text-align: center;
+}
+
+#registration-page-banner .overlay h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+}
+
+#registration-page-banner ol{
+    background: transparent;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+#registration-page-banner ol li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-family: 'Arimo', sans-serif; 
+    text-transform: capitalize;
+}
+
+#registration-page-banner ol .active:before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+}
+
+#registration-page-banner ol .active{
+    color: #fbaa33;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#registration-page-banner .support{
+    margin-top: -101px;
+}
+
+#registration-page-banner .support .online {
+    width:100%;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 35px 30px;
+    transition: .4s;
+}
+
+#registration-page-banner .support .middle{
+    border-right:2px solid #dddddd;   
+    border-left:2px solid #dddddd;   
+}
+
+#registration-page-banner .support .online h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    margin: 10px 0;
+}
+
+#registration-page-banner .support .online .go {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #999999;
+    display: inline-block;
+    transition: .4s;
+}
+
+#registration-page-banner .support .online i {
+    margin-left: 5px;
+}
+
+#registration-page-banner .support .online:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#registration-page-banner .support .online .go:hover {
+    color: #fbaa33;
+}
+
+/*==============================================
+               banner part css end
+==============================================*/
+
+/*==============================================
+               register css start
+==============================================*/
+
+#register-part{
+    padding-top: 100px;
+}
+
+#register-part .img-part img{
+    width: 100%;
+    height: auto;
+}
+
+#register-part .log-head h3{
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Arimo', sans-serif;
+    color: #2e3e50;
+    padding-bottom: 10px;
+}
+
+#register-part .log-head h6{
+    color: #999999;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#register-part .log-head h6:after{
+    width: 60px;
+    height: 4px;
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background: #2e3e50;
+    border-radius: 5px;
+}
+
+#register-part form .info{
+    position: relative;
+}
+
+#register-part form .info input{
+    width: 100%;
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 0;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#register-part form .info i{
+    position: absolute;
+    right: 1px;
+    color: #999999;
+    top: 64px;
+    font-size: 16px;
+}
+
+#register-part form .name i{
+    font-size: 18px;
+}
+
+#register-part form .info .lock{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#register-part form .info input:focus{
+    border-color:#2e3e50;
+}
+
+#register-part form .info input:focus::placeholder{
+    color:#2e3e50;
+}
+
+#register-part form .info i:focus{
+    color:#2e3e50;
+}
+
+#register-part form .button button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    background: transparent;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+#register-part form .button button:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#register-part form .button button:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+    left: 0;
+}
+
+#register-part form .button button:hover:after{
+    width: 100%;
+}
+
+#register-part .f-s p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    color: #999999;
+}
+
+#register-part .f-s .sign{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    display: inline-block;
+    transition: .4s;
+    color: #2d3e50;
+}
+
+#register-part .f-s .social{
+    position: relative;
+}
+
+#register-part .f-s .social::after{
+    position:absolute;
+    height: 30px;
+    width: 1px;
+    content: '';
+    background: #dddddd;
+    top:5px;
+    right: 48px;
+}
+
+#register-part .f-s a i{
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #4d65aa;
+    color: #fff;
+    margin-left: 13px;
+}
+
+#register-part .f-s a .google{
+    background: #d9594f;
+}
+
+/*==============================================
+              register part css end
+==============================================*/
+
+/*=========================================================
+                 Registration page css end
+=========================================================*/
+
+
+
+
+/*=========================================================
+                    error page css start
+=========================================================*/
+
+#error-part{
+    background: url(../images/404-page/404_Page_bg.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#error-part .img{
+    width: 600px;
+    padding-top: 150px;
+    padding-bottom: 63px;
+    margin: 0 auto;
+}
+
+#error-part .img img{
+    width: 100%;
+    height: auto;
+}
+
+#error-part .goback a{
+    font-size: 18px;
+    font-weight: 400;
+    background: transparent;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+#error-part .goback{
+    padding-left: 22px;
+}
+
+#error-part .goback a:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#error-part .goback a:after{
+    position: absolute;
+    top: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+    border-radius: 3px;
+    left: 0;
+}
+
+#error-part .goback a:hover:after{
+    width: 100%;
+}
+
+/*=========================================================
+                     error page css end
+=========================================================*/
+
+
+
 
 
 

@@ -3,7 +3,7 @@
 $(window).scroll(function(){
     var scrollAmount = $(window).scrollTop()
     
-    if(scrollAmount > 350){
+    if(scrollAmount > 300){
         $(".manubar").addClass("fixed")
     }else{
         $(".manubar").removeClass("fixed")
@@ -294,11 +294,6 @@ $('.venobox').venobox();
 
 
 //=========================== about us page js end ========================//
-
-
-
-
-
 
 
 
