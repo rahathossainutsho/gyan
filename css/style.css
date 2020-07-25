@@ -2044,22 +2044,6 @@ header .get-started a:hover:after{
 =========================================================*/
 
 /*==============================================
-         header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .ab-home{
-    color:#2d3e50;
-}
-
-header .navbar-nav li .about-active{
-    color: #fbaa33;
-}
-
-/*==============================================
-          header (navbar) part css end
-==============================================*/
-
-/*==============================================
               banner part css start
 ==============================================*/
 
@@ -2333,22 +2317,6 @@ header .navbar-nav li .about-active{
 /*=========================================================
                   Our_courses page css start
 =========================================================*/
-
-/*==============================================
-             header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .cours-home{
-    color:#2d3e50;
-}
-
-header .navbar-nav li .cours-active{
-    color: #fbaa33;
-}
-
-/*==============================================
-             header (navbar) part css end
-==============================================*/
 
 /*==============================================
               banner part css start
@@ -2712,22 +2680,6 @@ header .navbar-nav li .cours-active{
 =========================================================*/
 
 /*==============================================
-         header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .event-home{
-    color:#2d3e50;
-}
-
-header .navbar-nav li .event-active{
-    color: #fbaa33;
-}
-
-/*==============================================
-          header (navbar) part css end
-==============================================*/
-
-/*==============================================
               banner part css start
 ==============================================*/
 
@@ -3035,18 +2987,6 @@ header .navbar-nav li .event-active{
 /*=========================================================
               Event details page css start
 =========================================================*/
-
-/*==============================================
-         header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .event-d-home{
-    color:#2d3e50;
-}
-
-/*==============================================
-          header (navbar) part css end
-==============================================*/
 
 /*==============================================
               banner part css start
@@ -3477,18 +3417,6 @@ header .navbar-nav li .event-d-home{
          header (navbar) part css start
 ==============================================*/
 
-header .navbar-nav li .teach-home{
-    color:#2d3e50;
-}
-
-header .navbar-nav li .teach-active{
-    color: #fbaa33;
-}
-
-/*==============================================
-          header (navbar) part css end
-==============================================*/
-
 /*==============================================
               banner part css start
 ==============================================*/
@@ -3729,18 +3657,6 @@ header .navbar-nav li .teach-active{
 /*=========================================================
               Blog details page css start
 =========================================================*/
-
-/*==============================================
-         header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .blog-d-home{
-    color:#2d3e50;
-}
-
-/*==============================================
-          header (navbar) part css end
-==============================================*/
 
 /*==============================================
               banner part css start
@@ -4001,6 +3917,186 @@ header .navbar-nav li .blog-d-home{
              blog details part css end
 ==============================================*/
 
+/*==============================================
+             comment part css start
+==============================================*/
+
+#comment-part{
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: -20px;
+}
+
+#comment-part::after{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 120px;
+    content: "";
+    height: 1px;
+    background: #eeeeee;
+}
+
+#comment-part .comment-head a{
+    display:block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #151515;
+    font-family: 'Arimo', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+#comment-part .comment .user-img img{
+    width: 100%;
+    height: auto;
+}
+
+#comment-part .comment .comment-details h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #151515;
+    font-family: 'Arimo', sans-serif;
+    text-transform: capitalize;
+}
+
+#comment-part .comment .comment-details h3 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 5px;
+}
+
+#comment-part .comment .comment-details p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-top: 15px;
+}
+
+#comment-part .comment .comment-details a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    color: #444444;
+    padding-top: 10px;
+    transition: .4s;
+}
+
+#comment-part .comment .comment-details a i{
+    margin-right: 5px;
+}
+
+#comment-part .comment .comment-details a:hover{
+    color: #fbaa33;
+}
+
+#comment-part .comment .comment-two{
+    position: relative;
+    margin-bottom: -10px;
+}
+
+#comment-part .comment .comment-two::after{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+    left: 0;
+    bottom:10px;
+    content: "";
+}
+
+#comment-part .comment .form-part form .form-control{
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    font-style: italic;
+    font-size: 13px;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    resize: none;
+}
+
+#comment-part .comment .form-part form .form-control:focus::placeholder{
+    color: #444444;
+}
+
+#comment-part .comment .form-part form textarea{
+    padding-top: 10px !important;
+    height: 120px;
+}
+
+#comment-part .comment .form-part form .form-group{
+    margin-bottom: 10px;
+}
+
+#comment-part .comment .form-part form .submit button{
+    width: 100%;
+    border:0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    line-height: 36px;
+    text-transform: capitalize;
+    position: relative;
+    background: transparent;
+    transition: .4s;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+#comment-part .comment .form-part form .submit button:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#2d3e50;
+    content: '';
+    z-index: -1;
+}
+
+#comment-part .comment .form-part form .submit button:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    transition: .4s;
+    background:#fbaa33;
+    content: '';
+    z-index: -1;  
+}
+
+#comment-part .comment .form-part form .submit button:hover:after{
+    width: 100%;
+}
+
+#comment-part .comment .log-fb p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+}
+
+#comment-part .comment .log-fb p a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c8cde;;
+    text-transform: capitalize;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/*==============================================
+              comment part css end
+==============================================*/
+
 /*=========================================================
                  Blog detalis page css end
 =========================================================*/
@@ -4022,18 +4118,6 @@ header .navbar-nav li .blog-d-home{
 
 /*==============================================
               header-top part css end
-==============================================*/
-
-/*==============================================
-         header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .regis-home{
-    color:#2d3e50;
-}
-
-/*==============================================
-          header (navbar) part css end
 ==============================================*/
 
 /*==============================================
@@ -4185,46 +4269,52 @@ header .navbar-nav li .regis-home{
     border-radius: 5px;
 }
 
-#login-part form .info{
+#login-part form{
+    padding-top: 5px;
+}
+
+#login-part form .form-group{
     position: relative;
 }
 
-#login-part form .info input{
+#login-part form .form-group input{
     width: 100%;
     font-size: 16px;
     color: #999999;
     font-family: 'Arimo', sans-serif;
-    border: 0;
-    border-bottom: 1px solid #dddddd;
     padding-left: 0;
-    padding-top: 60px;
-    padding-bottom: 15px;
     font-weight: 400;
     font-style: normal;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
 }
 
-#login-part form .info i{
+#login-part form .form-group i{
     position: absolute;
     right: 1px;
     color: #999999;
-    top: 64px;
+    top: 47px;
     font-size: 16px;
 }
 
-#login-part form .info .lock{
+#login-part form .form-group .lock{
     font-weight: 700;
     font-size: 20px;
 }
 
-#login-part form .info input:focus{
+#login-part form .form-group input:focus{
     border-color:#2e3e50;
 }
 
-#login-part form .info input:focus::placeholder{
+#login-part form .form-group input:focus::placeholder{
     color:#2e3e50;
 }
 
-#login-part form .info i:focus{
+#login-part form .form-group input:focus+i{
     color:#2e3e50;
 }
 
@@ -4232,7 +4322,7 @@ header .navbar-nav li .regis-home{
     width: 100%;
     outline: 0;
     border: 0;
-    margin-top: 28px;
+    margin-top: 10px;
     font-size: 20px;
     font-weight: 600;
     background: transparent;
@@ -4242,7 +4332,7 @@ header .navbar-nav li .regis-home{
     border-radius: 5px;
     position: relative;
     z-index: 1;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #login-part form .button button:before{
@@ -4325,18 +4415,6 @@ header .navbar-nav li .regis-home{
 
 /*==============================================
               header-top part css end
-==============================================*/
-
-/*==============================================
-         header (navbar) part css start
-==============================================*/
-
-header .navbar-nav li .log-home{
-    color:#2d3e50;
-}
-
-/*==============================================
-          header (navbar) part css end
 ==============================================*/
 
 /*==============================================
@@ -4488,29 +4566,35 @@ header .navbar-nav li .log-home{
     border-radius: 5px;
 }
 
-#register-part form .info{
+#register-part form{
+    padding-top: 5px;
+}
+
+#register-part form .form-group{
     position: relative;
 }
 
-#register-part form .info input{
+#register-part form .form-group input{
     width: 100%;
     font-size: 16px;
     color: #999999;
     font-family: 'Arimo', sans-serif;
-    border: 0;
-    border-bottom: 1px solid #dddddd;
     padding-left: 0;
-    padding-top: 60px;
-    padding-bottom: 15px;
     font-weight: 400;
     font-style: normal;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
 }
 
-#register-part form .info i{
+#register-part form .form-group i{
     position: absolute;
     right: 1px;
     color: #999999;
-    top: 64px;
+    top: 47px;
     font-size: 16px;
 }
 
@@ -4518,20 +4602,20 @@ header .navbar-nav li .log-home{
     font-size: 18px;
 }
 
-#register-part form .info .lock{
+#register-part form .form-group .lock{
     font-weight: 700;
     font-size: 20px;
 }
 
-#register-part form .info input:focus{
+#register-part form .form-group input:focus{
     border-color:#2e3e50;
 }
 
-#register-part form .info input:focus::placeholder{
+#register-part form .form-group input:focus::placeholder{
     color:#2e3e50;
 }
 
-#register-part form .info i:focus{
+#register-part form .form-group input:focus+i{
     color:#2e3e50;
 }
 
@@ -4539,7 +4623,7 @@ header .navbar-nav li .log-home{
     width: 100%;
     outline: 0;
     border: 0;
-    margin-top: 28px;
+    margin-top: 10px;
     font-size: 20px;
     font-weight: 600;
     background: transparent;
@@ -4549,7 +4633,7 @@ header .navbar-nav li .log-home{
     border-radius: 5px;
     position: relative;
     z-index: 1;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #register-part form .button button:before{
@@ -4710,13 +4794,3 @@ header .navbar-nav li .log-home{
 /*=========================================================
                      error page css end
 =========================================================*/
-
-
-
-
-
-
-
-
-
-
