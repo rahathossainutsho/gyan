@@ -104,6 +104,11 @@
     
 /*============== about part css start ===============*/
     
+    #about-part{
+        padding-top: 80px;
+        margin-bottom: 90px;
+    }
+    
     #about-part .item .about-slider:before{
         width: 190px;
     }
@@ -160,6 +165,10 @@
 /*============ counter-up part css end ==============*/
     
 /*============= courses part css start ==============*/
+    
+    #courses-part{
+        padding-top: 80px;
+    }
     
     #courses-part .title{
         padding-left: 15px;
@@ -228,6 +237,10 @@
     
 /*============== events part css start ==============*/
     
+    #events-part{
+        padding-top: 80px;
+    }
+    
     #events-part .title{
         padding-top: 20px;
     }
@@ -248,6 +261,10 @@
 /*=============== events part css end ===============*/
     
 /*============ testimonial part css start ===========*/
+    
+    #testimonial-part{
+        padding-top: 80px;
+    }
     
     #testimonial-part .testimonial-slider .slide{
         flex-direction: column;
@@ -272,6 +289,7 @@
     
     #teacher-part{
         padding-bottom: 25px;
+        padding-top: 80px;
     }
     #teacher-part .title{
         padding-left: 15px;
@@ -299,6 +317,10 @@
 /*=============== teacher part css end ==============*/
     
 /*================ blog part css start ==============*/
+    
+    #blog-header-part{
+        padding-top: 80px;
+    }
     
     #blog-image-part .top-blog-part .text{
         display: flex;
@@ -353,6 +375,10 @@
 /*================= blog part css end ===============*/
     
 /*=============== footer part css start =============*/
+    
+    #footer-part{
+        padding-top: 80px;
+    }
     
     #footer-part .left{
         text-align: center;
@@ -423,7 +449,449 @@
         line-height: 30px;
     }
     
+/*==========================================
+           Index page css end
+==========================================*/  
+    
+    
+/*==========================================
+         About_us page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #about-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #about-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*============== about part css start ==============*/
+    
+    #about-part .last-p{
+        padding-top: 0;
+    }
+    
+    .about-page-part .text p{
+        text-align: left !important;
+    }
+
+/*============== about part css end ==============*/
+    
+/*========== about video part css start ==========*/
+    
+    .vbox-close{
+        margin-top: 80px;
+        margin-right: 0;
+    }
+    
+    #about-video-part .video::before{
+        width: 202px;
+        background-position: right;
+    }
+    
+    #about-video-part .video::after{
+        width: 202px;
+        background-position: left;
+    }
+    
+    #about-video-part .text .last{
+        padding-bottom: 34px;
+    }
+    
+    #about-video-part .enroll a{
+        padding: 12px 18px;
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    
+/*=========== about video part css end ===========*/
+
+/*==========================================
+          About_us page css end
+==========================================*/
+
+    
+/*==========================================
+        Our_courses page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #courses-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #courses-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*============= courses part css start ============*/
+    
+    #courses{
+        padding-top: 80px;
+    }
+    
+    #courses .item .people{
+        flex-direction: column;
+    }
+    
+    #courses .item .people .left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #courses .item .people .img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #courses .item .people .left .info{
+        text-align: center;
+    }
+    
+    #courses .item .people .right{
+        text-align: center;
+    }
+    
+    #courses .item .people .right p{
+        margin-top: 0;
+    }
+    
+    #courses .item .deg{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #courses .item .details{
+        text-align: center;
+    }
+    
+    #courses .courses-part-slider .item a{
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+
+/*============== courses part css end ============*/
+
+/*==========================================
+         Our_courses page css end
+==========================================*/
+   
+    
+/*==========================================
+         Our_events page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #events-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #events-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*============= events part css start =============*/
+    
+    #events{
+        padding-top: 80px;
+    }
+    
+    #events .nav-pills > .nav-item > .nav-link{
+        font-size: 16px;
+    }
+    
+    #events .event .event-text h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    #events .event .event-text .loca{
+        font-size: 13px;
+    }
+
+/*============== events part css end ==============*/
+
+/*==========================================
+         Our_events page css end
+==========================================*/
+    
+    
+/*==========================================
+       Event details page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #event-details-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #event-details-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*========= event details part css start ==========*/
+    
+    #event-details-part{
+        padding-top: 80px;
+    }
+    
+    #event-details-part .event-details .img .box{
+        width: 70px;
+        height: 70px;
+    }
+    
+    #event-details-part .event-details .img .box p{
+        font-size: 20px;
+    }
+    
+    #event-details-part .event-details .event-title h1{
+        font-size: 18px;
+    }
+    
+    #event-details-part .event-details .rating i{
+        font-size: 14px;
+    }
+    
+    #event-details-part .event-details .location .loca{
+        display: block;
+    }
+    
+    #event-details-part .event-details .location .join a{
+        margin-top: 20px;
+    }
+    
+    #event-details-part .other h1{
+        padding-top: 40px;
+        padding-bottom: 50px;
+        font-size: 30px;
+    }
+    
+    #event-details-part .event .event-text h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    #event-details-part .event .event-text .loca{
+        font-size: 13px;
+    }
+
+/*============ event details part css end ==========*/
+
+/*==========================================
+         Event details page css end
+==========================================*/
+    
+    
+/*==========================================
+         Our_teachers page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #teachers-page-banner{
+        margin-bottom: -20px;
+    }
+    
+    #teachers-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #teachers-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+
+/*==========================================
+         Our_teachers page css end
+==========================================*/
+    
+    
+/*==========================================
+        Blog details page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #blog-details-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #blog-details-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*========== blog details part css start ==========*/
+    
+    #blog-details{
+        padding-top: 80px;
+    }
+    
+    #blog-details .img{
+        padding-bottom: 40px;
+    }
+    
+    #blog-details .post-details .blog-post-by{
+        font-size: 14px;
+        display: inline-block;
+    }
+    
+    #blog-details .post-details .blog-poster-name{
+        padding-left: 22px;
+        display: inline-block;
+    }
+    
+    #blog-details .blog-details-body .blog-details-title{
+        font-size: 18px;
+    }
+    
+    #blog-details .blog-details-body .blog-detail{
+        padding-left: 0;
+    }
+    
+    #blog-details .blog-details-body .text-italic p{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+    }
+    
+    #blog-details .blog-details-body .list{
+        padding-bottom: 25px;
+    }
+    
+    #blog-details .blog-details-body .list ul li{
+        font-size: 14px;
+        padding-left: 0;
+    }
+    
+    #blog-details .tag-head h3{
+        padding-bottom: 20px;
+    }
+    
+    #blog-details .tags .tag-details ul li a{
+        display: block;
+        margin: 4px -1px;
+    }
+
+/*============ blog details part css end ==========*/
+    
+/*============= comment part css start ============*/
+    
+    #comment-part .comment-head a{
+        font-size: 18px;
+    }
+    
+    #comment-part .comment .comment-details{
+        padding-bottom: 50px;
+    }
+    
+    #comment-part .comment .comment-two::after{
+        display: none;
+    }
+    
+/*============== comment part css end =============*/
+
+/*==========================================
+         Blog details page css end
+==========================================*/
+
+    
+/*==========================================
+            Login page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #login-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #login-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*============== login part css start =============*/
+    
+    #login-part{
+        padding-top: 80px;
+    }
+    
+    #login-part .img-part img{
+        margin-bottom: 80px;
+    }
+    
+    #login-part .f-s .sign_in{
+        text-align: left !important;
+    }
+
+/*================ login part css end ============*/
+
+/*==========================================
+             Login page css end
+==========================================*/
+    
+    
+/*==========================================
+         Registration page css start
+==========================================*/ 
+    
+/*============== banner part css start ==============*/
+    
+    #registration-page-banner .support .container{
+        padding: 0 30px;
+    }
+    
+    #registration-page-banner .support .online{
+        padding: 20px 0;
+    }
+    
+/*============== banner part css end ==============*/
+    
+/*============ register part css start ============*/
+    
+    #register-part{
+        padding-top: 80px;
+    }
+    
+    #register-part .img-part img{
+        margin-bottom: 80px;
+    }
+    
+    #register-part .f-s .social{
+        padding-top: 20px;
+    }
+    
+    #register-part .f-s .social::after{
+        top: 25px;
+        right: 119px;
+    }
+
+/*============== register part css end ============*/
+
+/*==========================================
+          Registration page css end
+==========================================*/
+    
 }
+
 
 /*========================================================
           Extra small device responsive css end
