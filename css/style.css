@@ -3,24 +3,115 @@
 Template Name: Gyan Template
 Author: M. M. Rahat Hossain Utsho
 Author Email: rahathossainutsho21a@gmail.com
-Version:---
+Template Designer: M. M. Rahat Hossain Utsho
+Version: 1.00
 ----------------
 
-----------------------------------
+---------------------------------------
 1.Table of Content of index pages
-----------------------------------
-Header-top-part
-Header(navbar)-part
-Banner-part
-About-us-part
-Counter-up-part
-Courses-part-part
-Events-part-part
-Testimonial-part
-Teacher-part
-Blog-part
-Footer-part
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+About us part
+Counter up part
+Courses part part
+Events part part
+Testimonial part
+Teacher part
+Blog part
+Footer part
+
+
+---------------------------------------
+2.Table of Content of about_us pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+About us part
+About us video part
+Footer part
+
+---------------------------------------
+3.Table of Content of our_courses pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Our courses part
+Footer part
+
+---------------------------------------
+4.Table of Content of our_events pages
+---------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Events part
+Footer part
+
+
+------------------------------------------
+5.Table of Content of event_details pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Events details part
+Footer part
+
+
+------------------------------------------
+6.Table of Content of our_teachers pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Our teachers part
+Footer part
+
+
+------------------------------------------
+7.Table of Content of blog_details pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Blog details part
+Comment part
+Footer part
+
+
+------------------------------------------
+8.Table of Content of login pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Login part
+Footer part
+
+
+------------------------------------------
+9.Table of Content of registration pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Banner part
+Registration part
+Footer part
+
+
+------------------------------------------
+10.Table of Content of 404 pages
+------------------------------------------
+Header top part
+Header(navbar) part
+Error part
 */
+
+
 
 * {
     margin: 0;
@@ -4695,6 +4786,7 @@ header .get-started a:hover:after{
 
 #register-part .f-s .social{
     position: relative;
+    display: inline-block;
 }
 
 #register-part .f-s .social::after{
